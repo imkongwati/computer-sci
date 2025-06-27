@@ -40,7 +40,7 @@ def IndexView(page:ft.Page, params):
                                             alignment= ft.alignment.center,
                                             border_radius= 16))
 
-        a=ft.Text(value=answer,size=20)
+        a=ft.Text(value=answer,size=18)
         row=ft.Row(controls=number)
         answers_column.controls.append(row)
 
