@@ -16,7 +16,7 @@ def main(page: ft.Page):
     page.views.clear()
     troute = ft.TemplateRoute(page.route)
     IndexView(page, {})
-    if troute.match("/question/:id"):
+    if troute.match("/questions/:id"):
       params = {"id": troute.id}
       QuestionView(page, params)
     elif troute.match("/simple_view"):
